@@ -3,22 +3,22 @@ Můj projekt z SQL
 
 Zdravím všechny, kdo si zrovna čtou můj projekt. Můj projekt se skládá z následujících skriptů:
 
--Project
--Project_otazky
+- Project
+- Project_otazky
 
 V první řadě jsem si vytvořila datový podklad, který sestává z dvou tabulek. Tyto tabulky jsem vytvořila z datových sad, kterými jsou:
 
--czechia_payroll – Informace o mzdách v různých odvětvích za několikaleté období. Datová sada pochází z Portálu otevřených dat ČR.
--czechia_payroll_calculation – Číselník kalkulací v tabulce mezd.
--czechia_payroll_industry_branch – Číselník odvětví v tabulce mezd.
--czechia_payroll_unit – Číselník jednotek hodnot v tabulce mezd.
--czechia_payroll_value_type – Číselník typů hodnot v tabulce mezd.
--czechia_price – Informace o cenách vybraných potravin za několikaleté období. Datová sada pochází z Portálu otevřených dat ČR.
--czechia_price_category – Číselník kategorií potravin, které se vyskytují v našem přehledu.
--czechia_region – Číselník krajů České republiky dle normy CZ-NUTS 2.
--czechia_district – Číselník okresů České republiky dle normy LAU.
--countries - Všemožné informace o zemích na světě, například hlavní město, měna, národní jídlo nebo průměrná výška populace.
--economies - HDP, GINI, daňová zátěž, atd. pro daný stát a rok.
+- czechia_payroll – Informace o mzdách v různých odvětvích za několikaleté období. Datová sada pochází z Portálu otevřených dat ČR.
+- czechia_payroll_calculation – Číselník kalkulací v tabulce mezd.
+- czechia_payroll_industry_branch – Číselník odvětví v tabulce mezd.
+- czechia_payroll_unit – Číselník jednotek hodnot v tabulce mezd.
+- czechia_payroll_value_type – Číselník typů hodnot v tabulce mezd.
+- czechia_price – Informace o cenách vybraných potravin za několikaleté období. Datová sada pochází z Portálu otevřených dat ČR.
+- czechia_price_category – Číselník kategorií potravin, které se vyskytují v našem přehledu.
+- czechia_region – Číselník krajů České republiky dle normy CZ-NUTS 2.
+- czechia_district – Číselník okresů České republiky dle normy LAU.
+- countries - Všemožné informace o zemích na světě, například hlavní město, měna, národní jídlo nebo průměrná výška populace.
+- economies - HDP, GINI, daňová zátěž, atd. pro daný stát a rok.
 
 První tabulku jsem vytvořila spojením všech dostupných tabulek a číselníků, kromě tabulek countries a economies, ty jsem použila později. Nevyužila jsem ani tabulky czechia_region a czechia_district, protože mi stačilo pracovat s hodnotami pro celou republiku a nerozlišovat ji na kraje a okresy. Tabulku jsem spojila přes všechny kódy v číselnících. Jelikož jsem ze zadaných úkolů věděla, že budu pracovat pouze se mzdami, vyfiltrovala jsem data pomocí where, aby se data týkala pouze mezd a v hodnotě Kč. Následně jsem si i zkontrolovala, jestli ve sloupci industry_branch_name nejsou nulové hodnoty. Zjistila jsem, že ano, pravděpodobně týkající se mezd za celou republiku. K práci potřebuji znát mzdy pouze za odvětví, takže jsem i toto ošetřila, abych neměla zkreslené výsledky. V původní tabulce czechia_payroll se průměrné mzdy zobrazují po kvartálech, v podselektu wages_yearly v CTE jsem proto tyto mzdy zprůměrovala, abych  měla pouze průměrnou mzdu za odvětví a rok, nikoliv za kvartál.
 
