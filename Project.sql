@@ -9,7 +9,7 @@ WITH wages AS (
     cp.value 	AS avg_monthly_wage,
     cpc.name 	AS calculation_type,
     cpib.name 	AS industry_branch_name,
-    cpu.name 	AS payrolunit_type
+    cpu.name 	AS payrollunit_type
   FROM czechia_payroll cp
   LEFT JOIN czechia_payroll_calculation     cpc  ON cpc.code = cp.calculation_code 
   LEFT JOIN czechia_payroll_industry_branch cpib ON cp.industry_branch_code = cpib.code
@@ -73,40 +73,3 @@ SELECT * FROM t_anna_dilenardo_project_SQL_primary_final;
 SELECT * FROM t_anna_dilenardo_project_SQL_secondary_final;
 
 
-
-
-SELECT *
-FROM t_anna_dilenardo_project_SQL_primary_final 
-
-SELECT *
-FROM czechia_price cpr
-
-SELECT *
-FROM czechia_price_category cpc;
-
-SELECT DISTINCT industry_branch_code
-FROM czechia_payroll cp
-
-SELECT *
-FROM czechia_payroll cp 
-WHERE industry_branch_code IS NULL AND cp.value_type_code =5958 AND unit_code =200 AND calculation_code = 200
-
-
-SELECT *
-FROM czechia_payroll_value_type cpvt;
-
-SELECT *
-FROM czechia_payroll_industry_branch cpib 
-
-SELECT *
-FROM czechia_payroll_calculation cpc 
-
-
-SELECT *
-FROM czechia_payroll_unit cpu 
-
-SELECT *
-FROM economies
-
-SELECT *
-FROM countries
