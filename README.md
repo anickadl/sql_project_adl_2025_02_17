@@ -54,11 +54,10 @@ Protože tabulka obsahovala více záznamů pro každý rok (kvůli spojení s c
 Analýza ukázala, že pouze ve třech odvětvích nedošlo během sledovaného období k poklesu mezd – konkrétně v odvětvích `Ostatní činnosti`, `Zdravotní a sociální péče` a `Zpracovatelský průmysl`. Ve všech ostatních odvětvích se alespoň v jednom roce projevil meziroční pokles průměrné mzdy. Nejčastější poklesy byly zaznamenány v odvětví `Těžba a dobývání`, kde mzdy klesly celkem čtyřikrát (v letech 2009, 2013, 2014 a 2016). Druhým nejvíce kolísavým odvětvím byla `Výroba a rozvod elektřiny, plynu, tepla a klimatizovaného vzduchu`, kde se mzdy snížily třikrát – v letech 2011, 2013 a 2015.
 
 I když většina odvětví dlouhodobě vykazuje růst mezd, v některých se jejich vývoj v jednotlivých letech kolísá.
+
 ---
 
-
 ### 2) Kolik je možné si koupit litrů mléka a kilogramů chleba za první a poslední srovnatelné období v dostupných datech cen a mezd?
-
 
 **Postup:**  
 Zjistila jsem názvy položek *chléb* a *mléko* v datasetu a určila první a poslední období, kdy se obě potraviny vyskytují.  
@@ -77,7 +76,6 @@ To znamená, že lidé si mohli dovolit víc mléka než dřív, protože mzdy r
 ---
 
 ### 3) Která kategorie potravin zdražuje nejpomaleji (je u ní nejnižší percentuální meziroční nárůst)?
-
 
 **Postup:**  
 Pomocí funkce `LAG()` jsem spočítala meziroční procentní nárůst cen všech potravin.  
