@@ -107,6 +107,7 @@ Z dat vyplývá, že mezi lety 2009 a 2018 se kupní síla obyvatel výrazně m�
 Pomocí CTE jsem vypočítala meziroční růst HDP, mezd a cen potravin. Funkcí `LEAD()` jsem přidala hodnoty následujícího roku, abych mohla sledovat zpožděný dopad růstu HDP. Při volbě hranice pro výraznější růst HDP jsem nejprve nastavila hodnotu 10 % jako v předchozím úkolu, ale tato podmínka mi nevrátila žádný záznam. Proto jsem hranici snížila na 5 %, což už výsledky vrátilo. Jako alternativní řešení jsem do jednoho z CTE přidala podselect, který mi spočítal průměrný procentní růst HDP, a tuto hodnotu jsem použila jako hranici pro vyhodnocení výraznějšího růstu.
 
 **Odpověď a zhodnocení:**
+
 Z výsledků je patrné, že pokud dojde k výraznějšímu růstu HDP, projeví se to i v růstu mezd a s menším odstupem také v růstu cen. V roce 2007 se vyšší růst HDP odrazil v rostoucích mzdách i cenách, zatímco v roce 2015, kdy byl růst pomalejší, mzdy rostly jen mírně a ceny dokonce klesly. V roce 2017 se s opětovným zrychlením růstu HDP zvedly i mzdy a následně i ceny. Dá se tedy říct, že výrazný růst HDP má pozitivní dopad na mzdy a s časovým zpožděním také na celkovou cenovou hladinu.
 
 
