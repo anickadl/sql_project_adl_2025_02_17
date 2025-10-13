@@ -3,9 +3,9 @@ Můj projekt z SQL
 
 Zdravím všechny, kdo si zrovna čtou můj projekt. Tento projekt vznikl jako součást studia datové analýzy a jeho cílem bylo analyzovat vývoj mezd a cen základních potravin v České republice v letech 2006–2018 a zjistit, zda mezi nimi existuje vztah.
 
-# Projekt se skládá z:
-- tables
-- questions
+# Projekt se skládá ze dvou SQL skriptů:
+- `tables`
+- `questions`
 
 ## Práce na projektu
 
@@ -51,7 +51,6 @@ Z primary tabulky jsem použila průměrné roční mzdy podle odvětví. Pomoc�
 Protože tabulka obsahovala více záznamů pro každý rok (kvůli spojení s cenami), musela jsem znovu spočítat průměr mezd za rok a odvětví, abych předešla duplicitám.
 
 **Odpověď a zhodnocení:**   
-
 Analýza ukázala, že pouze ve třech odvětvích nedošlo během sledovaného období k poklesu mezd – konkrétně v odvětvích `Ostatní činnosti`, `Zdravotní a sociální péče` a `Zpracovatelský průmysl`. Ve všech ostatních odvětvích se alespoň v jednom roce projevil meziroční pokles průměrné mzdy. Nejčastější poklesy byly zaznamenány v odvětví `Těžba a dobývání`, kde mzdy klesly celkem čtyřikrát (v letech 2009, 2013, 2014 a 2016). Druhým nejvíce kolísavým odvětvím byla `Výroba a rozvod elektřiny, plynu, tepla a klimatizovaného vzduchu`, kde se mzdy snížily třikrát – v letech 2011, 2013 a 2015.
 
 I když většina odvětví dlouhodobě vykazuje růst mezd, v některých se jejich vývoj v jednotlivých letech kolísá.
